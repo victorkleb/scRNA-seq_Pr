@@ -1,5 +1,5 @@
 # scRNA-seq_Pr
-<br><br>
+<br>
 This repository contains functions to implement the method described in xxx.
 <br><br>
 The Jupyter notebooks on this page reproduce results for the 33k PBMC data set discussed in the body of the paper.  Results for four other data sets are given in Supplement 1.   Jupyter notebooks with results for each are in the corresponding folders: 10k_heart, 10k_brain, Kang_Lupus, and Macosko_GEO.
@@ -10,8 +10,6 @@ Two functions in the file  **nru_DE.py** implement the method and calculate diff
 
 These functions, with the others called by **nru**, are described in the file documentation.md
 <br><br><br>
-
-
 
 Before running the Jupyter notebooks, is necessary to create folders for programs and data.  For example, we use  D:/analyze_Pearson_residuals/ for programs, with a subfolder for each data set.
 For the data sets discussed here, the subfolders are  
@@ -84,6 +82,23 @@ The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  
 - sce_row_data_nz_GE_1.pkl
 - sce_column_data_nz_GE_1.pkl
 <br><br><br>
+
+**_Macosko retinal data_**
+<br><br>
+These instructions are from  http://github.com/berenslab/umi-normalization 
+<br><br>
+Counts
+- visit https://www.ncbi.nlm.nih.gov/geo/
+- search for GSE63472
+- download GSE63472_P14Retina_merged_digital_expression.txt.gz (50.7 MB)
+- extract to GSE63472_P14Retina_merged_digital_expression.txt
+- save this .txt file in the data subfolder
+<br>
+
+Cluster annotations
+- download from http://mccarrolllab.org/wp-content/uploads/2015/05/retina_clusteridentities.txt
+- save this .txt file in the data subfolder
+
 
 
 
