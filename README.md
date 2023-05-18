@@ -40,6 +40,7 @@ These instructions are based on  http://github.com/berenslab/umi-normalization. 
 - download 'Clustering analysis' (23.81 MB) from the same website
 - extract the folder ‘kmeans’ to the data subfolder 
 <br><br><br>
+
 **_10k_heart data from 10x Genomics_**
 <br><br>
 These instructions are similar to those for the 33kPBMC  data
@@ -56,6 +57,7 @@ These instructions are similar to those for the 33kPBMC  data
 - download 'Clustering analysis' (36.3 MB)
 - extract the folder ‘clustering’ to the data subfolder 
 <br><br><br>
+
 **_10k_brain data from 10x Genomics_**
 <br><br>
 These are almost identical to the instructions for the heart data
@@ -72,3 +74,17 @@ These are almost identical to the instructions for the heart data
 - download 'Clustering analysis' (32.7 MB)
 - extract the folder ‘clustering’ to the data subfolder 
 <br><br><br>
+
+**_Kang Lupus data_**
+<br><br>
+Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub**
+<br><br>
+The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  The program creates 3 python pickle  files in the data subfolder:
+- sce_counts_nz_GE_1.pkl
+- sce_row_data_nz_GE_1.pkl
+- sce_column_data_nz_GE_1.pkl
+<br><br><br>
+
+
+
+
