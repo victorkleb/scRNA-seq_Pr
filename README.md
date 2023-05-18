@@ -25,7 +25,7 @@ They are specified near the top of each notebook in the cell headed with the com
 
 Instructions for downloading the data are given below.  For the 33k PBMC  data from 10x Genomics and the Macosko retinal data, these follow http://github.com/berenslab/umi-normalization  very closely.  The Kang Lupus data are extracted from Bioconductor’s  ExperimentHub with code in a Jupyter notebook. 
 <br><br><br>
-<ins>**Download Instructions**<ins>
+__**Download Instructions**__
 <br><br>
 **33k PBMC  data from 10x Genomics**
 <br><br>
@@ -33,9 +33,9 @@ These instructions are based on  http://github.com/berenslab/umi-normalization. 
 -	visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/1.1.0/pbmc33k
 -	provide contact details if necessary
 -	download  'Gene / cell matrix (filtered)' (79.23 MB); it contains 3 files
--	matrix.mtx
--	genes.tsv
--	barcodes.tsv 
+  -	matrix.mtx
+  -	genes.tsv
+  -	barcodes.tsv 
 -	extract these 3 files to the data subfolder
 -	download 'Clustering analysis' (23.81 MB) from the same website
 -	extract the folder ‘kmeans’ to the data subfolder 
