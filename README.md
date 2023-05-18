@@ -39,7 +39,6 @@ These instructions are based on  http://github.com/berenslab/umi-normalization. 
 - extract these 3 files to the data subfolder
 - download 'Clustering analysis' (23.81 MB) from the same website
 - extract the folder ‘kmeans’ to the data subfolder 
-
 <br><br><br>
 **_10k_heart data from 10x Genomics_**
 <br><br>
@@ -48,7 +47,7 @@ These instructions are similar to those for the 33kPBMC  data
 - provide contact details if necessary
 - specify v3 chemistry
 - choose Chromium Demonstration (v3 chemistry)
-- Choose 10k Heart  Cells from an E18 mouse
+- choose 10k Heart  Cells from an E18 mouse
 - download  ' Feature/cell matrix(filtered)’ (71.3 MB); it contains 3 files
     - matrix.mtx
     - features.tsv   (for the 33kPBMC data, this is genes.tsv)
@@ -56,3 +55,20 @@ These instructions are similar to those for the 33kPBMC  data
 - extract these 3 files to the data subfolder
 - download 'Clustering analysis' (36.3 MB)
 - extract the folder ‘clustering’ to the data subfolder 
+<br><br><br>
+**_10k_brain data from 10x Genomics_**
+<br><br>
+These are almost identical to the instructions for the heart data
+- visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/
+- provide contact details if necessary
+- specify v3 chemistry
+- choose Chromium Demonstration (v3 chemistry)
+- choose 10k Brain  Cells from an E18 mouse
+- download  ' Feature/cell matrix(filtered)’ (117 MB); it contains 3 files
+    - matrix.mtx
+    - features.tsv 
+    - barcodes.tsv 
+- extract these 3 files to the data subfolder
+- download 'Clustering analysis' (32.7 MB)
+- extract the folder ‘clustering’ to the data subfolder 
+<br><br><br>
