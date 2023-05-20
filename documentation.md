@@ -22,3 +22,4 @@ __value__: dictionary containing 3 items
 -	df_selected_cells:  pandas data frame containing one row for each cell and one column for each random sample; the Boolean True/False values identify the cells used in each sample
 -	df_residuals: a dense pandas data frame containing n_genes rows – for genes with the largest sampling-adjusted mean sums of squares of Pearson residuals; the data frame has one column for each cell
 <br><br><br>
+
