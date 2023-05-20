@@ -39,6 +39,7 @@ __value__: pandas data frame
 
 # Additional functions
 <br>
+
 **mean_SSQ_Pearson_residuals  ( counts_sparse_selected_csr, gene_list, chunksize )**
 <br><br>
 called by: **nru, MSSQ_PR_samples**
