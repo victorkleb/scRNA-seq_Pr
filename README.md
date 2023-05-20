@@ -3,6 +3,7 @@
 This repository contains functions to implement the method described in xxx.
 <br><br>
 The files on this page contain Jupyter notebooks that reproduce results for the 33k PBMC data set studed in the body of the paper and or the four data sets discussed in Supplement 1.
+<br><br>
 
 Two functions in the file  **nru_DE.py** implement the method and calculate differential expression statistics for evaluation:
 -	**nru** – normalize and rank UMI counts: return statistics, residuals, and intermediate results 
@@ -98,6 +99,8 @@ Counts
 Cluster annotations
 - download from http://mccarrolllab.org/wp-content/uploads/2015/05/retina_clusteridentities.txt
 - save this .txt file in the data subfolder
+
+
 
 
 
