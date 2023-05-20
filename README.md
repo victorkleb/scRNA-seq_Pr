@@ -2,9 +2,9 @@
 <br>
 This repository contains functions to implement the method described in xxx.
 <br><br>
-The Jupyter notebooks on this page reproduce results for the 33k PBMC data set discussed in the body of the paper.  Results for four other data sets are given in Supplement 1.   Jupyter notebooks with results for each are in the corresponding folders: 10k_heart, 10k_brain, Kang_Lupus, and Macosko_GEO.
+The files on this page contain Jupyter notebooks that reproduce results for the 33k PBMC data set studed in the body of the paper and or the four data sets discussed in Supplement 1.
 
-Two functions in the file  **nru_DE.py** implement the method and calculate differential expression results for evaluation:
+Two functions in the file  **nru_DE.py** implement the method and calculate differential expression statistics for evaluation:
 -	**nru** – normalize and rank UMI counts: return statistics, residuals, and intermediate results 
 -	**DE_H_stats** – perform Kruskal-Wallis tests to analyze differential expression
 
