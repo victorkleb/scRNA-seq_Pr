@@ -55,10 +55,22 @@ __value__: pandas series
 -	data: mean SSQ of Pearson residuals for the input count matrix
 <br><br><br>
 
+**MSSQ_PR_samples  ( counts_sparse_selected_csr, gene_list, cell_list, chunksize, n_sample_pairs )**
+<br><br>
+called by: **nru**
+<br><br>
 
+__parameters__
+-	**counts_sparse_selected_csr**: a sparse scipy csr matrix of counts
+-	**gene_list**: python list of gene identifiers; its length equals the number of rows of the input array **counts_sparse_selected_csr**
+-	**cell_list**: python list of barcodes; its length equals the number of columns of **counts_sparse_selected_csr**
+-	**chunksize**: maximum number of rows used in calculation of mean SSQ of Pearson residuals with a dense submatrix of counts
+-	**n_sample_pairs**: number of pairs of complementary random samples of cells used to calculate the sampling-adjusted mean sum of squares of Pearson residuals 
+<br><br>
 
-
-
+__value__: dictionary containing 2 items
+-	df_selected_cells:  pandas data frame containing one row for each cell in **cell_list**  and one column for each random sample; the Boolean True/False values identify the cells used in each sample
+-	df_MSSQ_PR_samples: a pandas data frame containing  one row for each gene in **gene_list** and a total of  2* **n_sample_pairs**  columns – one for each sample of cells.   The values in the column are the mean SSQ of Pearson residuals calculated using the sample of cells identified with TRUE values in the corresponding column of the output item df_selected_cells
 
 
 
