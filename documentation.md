@@ -36,3 +36,53 @@ __value__: pandas data frame
 -	index contains gene identifiers; it is identical to the index of the input **df_residuals**
 -	two columns:   H_stat,  p_value
 <br><br><br>
+
+# Additional functions
+<br>
+**mean_SSQ_Pearson_residuals  ( counts_sparse_selected_csr, gene_list, chunksize )**
+<br><br>
+called by: **nru, MSSQ_PR_samples**
+<br><br>
+__parameters__
+-	**counts_sparse_selected_csr**: a sparse scipy csr matrix of counts; this may be the count matrix containing all genes and cells of interest, or a submatrix containing a random sample of approximately half of the cells – and genes with at least one nonzero count for some cell
+-	**gene_list**: python list of gene identifiers; its length equals the number of rows of the input array **counts_sparse_selected_csr**
+-	**chunksize**: maximum number of rows used in calculation of mean SSQ of Pearson residuals with a dense submatrix of counts
+<br><br>
+
+__value__: pandas series
+-	index: values in the input **gene_list**
+-	data: mean SSQ of Pearson residuals for the input count matrix
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
