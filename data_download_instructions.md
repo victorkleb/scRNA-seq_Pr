@@ -1,8 +1,9 @@
 # Data Download Instructions
 <br>
-**_33k PBMC  data from 10x Genomics_**
+
+**33k PBMC  data from 10x Genomics**
 <br><br>
-These instructions are based on  http://github.com/berenslab/umi-normalization.  Modification is necessary due to subsequent changes on the 10x Genomics website.
+These are based on the instructions in  http://github.com/berenslab/umi-normalization.   Modification was necessary due to subsequent changes on the 10x Genomics website.
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/1.1.0/pbmc33k
 - provide contact details if necessary
 - download  'Gene / cell matrix (filtered)' (79.23 MB); it contains 3 files
@@ -14,7 +15,7 @@ These instructions are based on  http://github.com/berenslab/umi-normalization. 
 - extract the folder ‘kmeans’ to the data subfolder 
 <br><br><br>
 
-**_10k_heart data from 10x Genomics_**
+**10k_heart data from 10x Genomics**
 <br><br>
 These instructions are similar to those for the 33kPBMC  data
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/
@@ -31,7 +32,7 @@ These instructions are similar to those for the 33kPBMC  data
 - extract the folder ‘clustering’ to the data subfolder 
 <br><br><br>
 
-**_10k_brain data from 10x Genomics_**
+**10k_brain data from 10x Genomics**
 <br><br>
 These are almost identical to the instructions for the heart data
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/
@@ -48,7 +49,7 @@ These are almost identical to the instructions for the heart data
 - extract the folder ‘clustering’ to the data subfolder 
 <br><br><br>
 
-**_Kang Lupus data_**
+**Kang Lupus data**
 <br><br>
 Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub**
 <br><br>
@@ -58,7 +59,7 @@ The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  
 - sce_column_data_nz_GE_1.pkl
 <br><br><br>
 
-**_Macosko retinal data_**
+**Macosko retinal data**
 <br><br>
 These instructions are from  http://github.com/berenslab/umi-normalization 
 <br><br>
