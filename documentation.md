@@ -84,8 +84,24 @@ __parameters__
 <br><br>
 
 __value__: python list containing the mean SSQ of Pearson residuals for the genes represented by the rows of the input matrix
+<br><br><br>
 
+**compute_pearson_residuals  ( counts_sparse_selected_csr, gene_list, cell_list,  list_gene_subset )**
+<br><br>
+called by: **nru**
+<br><br>
 
+__parameters__
+-	**counts_sparse_selected_csr**: a sparse scipy csr matrix of counts
+-	**gene_list**: python list of gene identifiers; its length equals the number of rows of the input array **counts_sparse_selected_csr**
+-	**cell_list**: python list of barcodes; its length equals the number of columns of **counts_sparse_selected_csr**
+-	**list_gene_subset**: genes for which Pearson residuals are to be computed – for example the 2,000 with the largest values of sampling-adjusted mean SSQ of Pearson residuals<br><br>
+
+__value__: pandas data frame
+-	index: values in the input **list_gene_subset**
+-	columns: values in the input **cell_list**
+-	data: Pearson residuals 
+<br><br><br>
 
 
 
