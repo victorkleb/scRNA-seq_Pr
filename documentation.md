@@ -71,6 +71,19 @@ __parameters__
 __value__: dictionary containing 2 items
 -	df_selected_cells:  pandas data frame containing one row for each cell in **cell_list**  and one column for each random sample; the Boolean True/False values identify the cells used in each sample
 -	df_MSSQ_PR_samples: a pandas data frame containing  one row for each gene in **gene_list** and a total of  2* **n_sample_pairs**  columns – one for each sample of cells.   The values in the column are the mean SSQ of Pearson residuals calculated using the sample of cells identified with TRUE values in the corresponding column of the output item df_selected_cells
+<br><br><br>
+
+**mean_SSQ_Pearson_residuals_array_block  ( block_csr_matrix, seq_depth_vector )**
+<br><br>
+called by: **mean_SSQ_Pearson_residuals**
+<br><br>
+
+__parameters__
+-	**block_csr_matrix**: a sparse scipy csr matrix of counts; it contains a set of contiguous rows of the count matrix input to **mean_SSQ_Pearson_residuals** 
+-	**seq_depth_vector**: a 1-diminasional numpy array with length equal to the number of columns of the input **block_csr_matrix**
+<br><br>
+
+__value__: python list containing the mean SSQ of Pearson residuals for the genes represented by the rows of the input matrix
 
 
 
