@@ -4,6 +4,7 @@
 **nru ( df_counts_sparse, chunksize**=1000, **nz_min**=50, **n_sample_pairs**=20, **n_genes**=2000 **)**
 <br><br>
 __description__
+
 For the input UMI count matrix, provided as a sparse pandas data frame
 -	count the number of cells with nonzero counts for each gene
 -	restrict to genes for which this count exceeds a specified minimum
@@ -45,6 +46,7 @@ __value__: dictionary containing 3 items
 **DE_H_stats ( df_residuals, df_clusters )**
 <br><br>
 __description__
+
 Given a pandas data frame of Pearson residuals and a clustering of cells, perform Kruskal-Wallis tests for each gene.  Return H-statistics and p-values. 
 <br><br>
 
@@ -70,6 +72,7 @@ called by: **nru, MSSQ_PR_samples**
 <br><br>
 
 __description__
+
 Given a sparse array of counts, calculate the sequencing depths as the column sums.
 <br>
 
@@ -93,6 +96,7 @@ called by: **nru**
 <br><br>
 
 __description__
+
 Perform random sampling to define (complementary pairs of) subsets of cells. 
 <br>
 
@@ -118,6 +122,7 @@ called by: **mean_SSQ_Pearson_residuals**
 <br><br>
 
 __description__
+
 Convert a sparse array of UMI counts to a dense numpy array, then calculate the mean SSQ of their Pearson residuals.   This requires the sequencing depths of all cells represented in the input array; these are specified by the function’s second parameter. <br><br>
 
 __arguments__
@@ -134,13 +139,15 @@ called by: **nru**
 <br><br>
 
 __description__
-Compute Pearson residuals for the sparse array of counts, returning a dense pandas data frame.  Return values only for genes in the 4th parameter -- **list_gene_subset**.
+
+Compute Pearson residuals for the sparse array of counts, returning a dense pandas data frame.  Return values only for genes in the 4th parameter - **list_gene_subset**.
 
 __arguments__
 -	**counts_sparse_selected_csr**: a sparse scipy csr matrix of counts
 -	**gene_list**: python list of gene identifiers; its length equals the number of rows of the input array **counts_sparse_selected_csr**
 -	**cell_list**: python list of barcodes; its length equals the number of columns of **counts_sparse_selected_csr**
--	**list_gene_subset**: genes for which Pearson residuals are to be computed – for example the 2,000 with the largest values of sampling-adjusted mean SSQ of Pearson residuals<br><br>
+-	**list_gene_subset**: genes for which Pearson residuals are to be computed – for example the 2,000 with the largest values of sampling-adjusted mean SSQ of Pearson residuals
+<br><br>
 
 __value__: pandas data frame
 -	index: values in the input **list_gene_subset**
