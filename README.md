@@ -6,23 +6,13 @@ This repository includes
 - the file **nru_DE.py** of functions that implement our algorithms.  The examples in the Jupyter notebooks call two functions:
 	- **nru**: normalize and rank UMI counts: return statistics, residuals, and intermediate results 
 	- **DE_H_stats**: perform Kruskal-Wallis tests to analyze differential expression
-- the file **plot_tab_utilities.py**: functions used in plotting
-<br><br>
-	
-The functions in **nru_DE.py*  are described in the file **function_documentation.md**.
-<br><br>
+- the file **plot_tab_utilities.py**
 
-Before running the Jupyter notebooks, first create folders for programs and data.  For example, we use  D:/analyze_Pearson_residuals/ for programs, with a subfolder for each data set.
-For the data sets discussed here, the subfolders are  
--	33k_PBMC
--	10k_heart
--	10k_brain
--	Kang_Lupus
--	Macosko_GEO
-<br><br>
+The functions in **nru_DE.py**  are described in  **function_documentation.md**.
+<br>
 
-Subfolders are specified near the top of each notebook in the cell headed with the comment **#### user specified**. 
-<br><br>
+Before running the Jupyter notebooks, first create folders for programs and data.  For example, we use  D:/analyze_Pearson_residuals/ for programs, with a subfolder for each data set.  These are specified near the top of each notebook in the cell headed with the comment **#### user specified**. 
+<br>
 
-Instructions for downloading the data are in the file **data_download_instructions.md**.  For the Macosko retinal data, they are taken directly from http://github.com/berenslab/umi-normalization.  For the 33k PBMC data set from 10x Genomics, they follow that web page very closely; modifications are necessary.
+Instructions for downloading the data are in  **data_download_instructions.md**.  For the Macosko retinal data, they are taken directly from http://github.com/berenslab/umi-normalization.  For the 33k PBMC data set from 10x Genomics, they follow that web page very closely; modifications are necessary.
 
