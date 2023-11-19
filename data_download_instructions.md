@@ -57,7 +57,7 @@ The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  
 - sce_column_data_nz_GE_1.pkl
 <br><br><br>
 
-** retinal data**
+**retinal data**
 <br><br>
 These instructions are from  http://github.com/berenslab/umi-normalization 
 <br><br>
