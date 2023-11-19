@@ -6,7 +6,7 @@ This repository includes
 - The file **nru_DE.py** of functions that implement our algorithms.  The examples in the Jupyter notebooks call three functions:
 	- **nru**: normalize and rank UMI counts: return statistics, residuals, and intermediate results 
 	- **DE_H_stats**: perform Kruskal-Wallis tests to analyze differential expression
-	- **mean_SSQ_Pearson_residuals**: called by nru, but used stand-alone in the notebooks 01_compute_Mg_Ag_data_prep_for_Lg_Sg   to calculate the mean SSQ of Pearson residuals for all genes in the input count matrix; in the paper, these are plotted in Figure 1A and summarized in Table 2.
+	- **mean_SSQ_Pearson_residuals**: called by **nru** in the notebooks 01_compute_Mg_Ag_data_prep_for_Lg_Sg.  Called in 02_Fig_1_and_Table to calculate the mean SSQ of Pearson residuals for all genes in the input count matrix. In the paper, these are plotted in Figure 1A and summarized in Table 2.
 - The file **plot_tab_utilities.py** 
 <br><br>
 	
