@@ -3,7 +3,7 @@
 
 **33k PBMC  data from 10x Genomics**
 <br><br>
-These are based on the instructions in  http://github.com/berenslab/umi-normalization.   Modification was necessary due to subsequent changes on the 10x Genomics website.
+These are based on the instructions in  http://github.com/berenslab/umi-normalization.  Modification was necessary due to changes made on the 10x Genomics website after the *berenslab* page was last updated.
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/1.1.0/pbmc33k
 - provide contact details if necessary
 - download  'Gene / cell matrix (filtered)' (79.23 MB); it contains 3 files
@@ -20,9 +20,8 @@ These are based on the instructions in  http://github.com/berenslab/umi-normaliz
 These instructions are similar to those for the 33kPBMC  data
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/
 - provide contact details if necessary
-- specify v3 chemistry
-- choose Chromium Demonstration (v3 chemistry)
-- choose 10k Heart  Cells from an E18 mouse
+- filter on Chemistry Version: select v3
+- choose 10k Heart Cells from an E18 mouse (v3 chemistry)
 - download  ' Feature/cell matrix(filtered)’ (71.3 MB); it contains 3 files
     - matrix.mtx
     - features.tsv   (for the 33kPBMC data, this is genes.tsv)
@@ -37,8 +36,7 @@ These instructions are similar to those for the 33kPBMC  data
 These are almost identical to the instructions for the heart data
 - visit   https://support.10xgenomics.com/single-cell-gene-expression/datasets/
 - provide contact details if necessary
-- specify v3 chemistry
-- choose Chromium Demonstration (v3 chemistry)
+- filter on Chemistry Version: select v3
 - choose 10k Brain  Cells from an E18 mouse
 - download  ' Feature/cell matrix(filtered)’ (117 MB); it contains 3 files
     - matrix.mtx
@@ -51,7 +49,7 @@ These are almost identical to the instructions for the heart data
 
 **Kang Lupus data**
 <br><br>
-Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub**
+Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub** in the folder Kang_Lupus_notebooks
 <br><br>
 The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  The program creates 3 python pickle  files in the data subfolder:
 - sce_counts_nz_GE_1.pkl
@@ -59,7 +57,7 @@ The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  
 - sce_column_data_nz_GE_1.pkl
 <br><br><br>
 
-**Macosko retinal data**
+** retinal data**
 <br><br>
 These instructions are from  http://github.com/berenslab/umi-normalization 
 <br><br>
