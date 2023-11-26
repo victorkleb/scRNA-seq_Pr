@@ -121,9 +121,9 @@ For the input UMI count matrix, provided as a sparse pandas data frame
 -	for genes with the **n_genes** largest values of the sampling-adjusted mean SSQ of Pearson residuals, calculate a dense matrix of residuals
 
 Returns
--	a data frame containing – for each gene with sufficient nonzero cells – the number of nonzero cells, the mean SSQ of Pearson residuals calculated for all cells and for the subsets of cells
--	the matrix of Pearson residuals as a dense pandas data frame
+-	a data frame containing – for each gene with sufficient nonzero cells – the number of nonzero cells, its total count, the mean SSQ of Pearson residuals calculated with all cells, the sampling-adjusted mean SSQ of Pearson residuals, and a column for each sample of cells, containing the mean SSQ of Pearson residuals
 -	a data frame identifying the cells in each sample
+-	the matrix of Pearson residuals as a dense pandas data frame
 
 Calculating the sums of squares of Pearson residuals is faster with dense matrices but requires more storage.  To balance these requirements, calculations are performed with dense sub-matrices for subsets of genes.   
 
@@ -138,12 +138,12 @@ __arguments__
 -	**n_genes**: number of genes for which Pearson residuals are calculated and returned;  these are the genes with the largest values of sampling-adjusted mean SSQ of Pearson residuals
 <br><br>
 
-__value__: dictionary containing 3 items
+__value__: dictionary containing 3 pandas data frames
 -	df_gene_stats: pandas data frame with statistics for each gene in the input data frame with nonzero counts on  **nz_min**  cells or more.  Its columns are
     - the number of nonzero cells
     - total count
     - the mean SSQ of Pearson residuals calculated with all cells
-    - the sampling-adjusted estimate of the mean SSQ of Pearson residuals
+    - the sampling-adjusted mean SSQ of Pearson residuals
     - a column for each sample of cells, containing the mean SSQ of Pearson residuals
 -	df_selected_cells:  pandas data frame containing one row for each cell and one column for each random sample; the Boolean True/False values identify the cells used in each sample
 -	df_residuals: a dense pandas data frame containing **n_genes** rows – for genes with the largest sampling-adjusted mean SSQ of Pearson residuals; the data frame has one column for each cell
