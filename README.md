@@ -27,9 +27,7 @@ For the data sets discussed here, the subfolders are
 -	retinal
 <br><br>
 
-Subfolders are specified near the top of each notebook in the cell headed with the comment **#### user specified**. 
+Folders are specified near the top of each notebook in the cell headed with the comment **#### user specified**. 
 <br><br>
 
-Instructions for downloading the data are in  **data_download_instructions.md**.  For the  retinal data, they are taken directly from http://github.com/berenslab/umi-normalization.  
-For the 33k PBMC data set from 10x Genomics, they follow that web page very closely; modifications were necessary due to changes made on the 10x Genomics website after the 
-*berenslab* page was last updated.
+Instructions for downloading the data are in  **data_download_instructions.md**.  For the  retinal data, they are taken directly from http://github.com/berenslab/umi-normalization.  For the 33k PBMC data set from 10x Genomics, they follow that web page very closely; modifications were necessary due to changes made on the 10x Genomics website after the *berenslab* page was last updated.
