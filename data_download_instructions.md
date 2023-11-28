@@ -47,9 +47,9 @@ These are almost identical to the instructions for the heart data
 - extract the folder ‘clustering’ to the data subfolder 
 <br><br><br>
 
-**Kang Lupus data**
+**lupus data**
 <br><br>
-Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub** in the folder Kang_Lupus_notebooks
+Data are accessed with the Jupyter notebook **extract_Kang_Lupus_data_from_ExperimentHub** in the folder lupus_notebooks
 <br><br>
 The code is excerpted from the vignette in https://github.com/HelenaLC/muscat.  The program creates 3 python pickle  files in the data subfolder:
 - sce_counts_nz_GE_1.pkl
