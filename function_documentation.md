@@ -116,12 +116,12 @@ For the input UMI count matrix, provided as a sparse pandas data frame
 -	restrict to genes for which this count exceeds a specified minimum
 -	for each of these genes, calculate
 	- the mean SSQ of Pearson residuals – using all cells in the count matrix
-	- the mean SSQ of Pearson residuals – for multiple pairs of random samples of complementary samples of approximately half of the cells
+	- the mean SSQ of Pearson residuals – for multiple pairs of random samples (complementary samples of approximately half of the cells)
 	- the sampling-adjusted mean SSQ of Pearson residuals 
 -	for genes with the **n_genes** largest values of the sampling-adjusted mean SSQ of Pearson residuals, calculate a dense matrix of residuals
 
 Returns
--	a data frame containing – for each gene with sufficient nonzero cells – the number of nonzero cells, its total count, the mean SSQ of Pearson residuals calculated with all cells, the sampling-adjusted mean SSQ of Pearson residuals, and a column for each sample of cells, containing the mean SSQ of Pearson residuals
+-	a data frame containing – for each gene with sufficient nonzero cells – the number of nonzero cells, its total count, the mean SSQ of Pearson residuals calculated with all cells, the sampling-adjusted mean SSQ of Pearson residuals, and a column for each sample of cells, containing the mean SSQ of Pearson residuals calculated with that sample
 -	a data frame identifying the cells in each sample
 -	the matrix of Pearson residuals as a dense pandas data frame
 

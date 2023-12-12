@@ -2,7 +2,7 @@
 <br>
 
 This repository includes
-- Five folders, each containing  Jupyter notebooks that reproduce the results in the paper "Normalization and gene selection for single-cell RNA-seq UMI data using 
+- Five folders, each containing  Jupyter notebooks that reproduce the results in the preprint "Normalization and gene selection for single-cell RNA-seq UMI data using 
 sampling-adjusted sums of squares of Pearson residuals with a Poisson model" and its Supplement 1.   There is one folder for each data set.
 - The file **nru_DE.py** of functions that implement the algorithms.  The examples in the notebooks call three functions:
 	- **nru**: normalize and rank UMI counts: return statistics, residuals, and intermediate results 
@@ -37,7 +37,7 @@ Each subfolder contains 11 notebooks
 -	one is data-specific (e.g. prep_33k_PBMC); it prepares 2 pandas data frames
 	- a sparse data frame containing UMI counts
     - a clustering (provided with the data)	
-- the remaining 10 notebooks perform the reported analyses; there are two versions of noteebooks 06 and 10, depending on whether or not genes are notated in the plots
+- the remaining 10 notebooks perform the reported analyses; there are two versions of notebooks 06 and 10, depending on whether or not genes are notated in the plots
 	- 01_compute_Mg_Ag_data_prep_for_Lg_Sg
 	- 02_Fig_1_and_Table
 	- 03_compute_L_g
